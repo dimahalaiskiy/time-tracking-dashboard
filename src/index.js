@@ -1,5 +1,5 @@
 import json from "./data.json"
-
+import icons from "./images/icons.svg"
 
 
 const dataJsonString = JSON.stringify(json);
@@ -17,7 +17,7 @@ function dailyMarkup() {
    return data.map(( { title , svg, color,  timeframes : { daily: { current, previous} }}) => {
         return `<li class="card ${color}">
         <svg class="icon-svg">
-          <use xlink:href=${svg}></use>
+          <use xlink:href="${svg}"></use>
         </svg>
         <h2 class="heading-occupation">${title}</h2>
         <div class="card-option">
@@ -40,7 +40,7 @@ function weeklyMarkup() {
   return data.map(( { title , svg, color,  timeframes : { weekly: { current, previous} }}) => {
     return `<li class="card ${color}">
     <svg class="icon-svg">
-      <use xlink:href=${svg}></use>
+      <use xlink:href="${svg}"></use>
     </svg>
     <h2 class="heading-occupation">${title}</h2>
     <div class="card-option">
@@ -61,7 +61,7 @@ const monthlyMarkup = () => {
   return data.map(( { title , svg, color,  timeframes : { monthly: { current, previous} }}) => {
     return `<li class="card ${color}">
     <svg class="icon-svg">
-      <use xlink:href=${svg}></use>
+      <use xlink:href="${svg}""></use>
     </svg>
     <h2 class="heading-occupation">${title}</h2>
     <div class="card-option">
@@ -80,7 +80,6 @@ const monthlyMarkup = () => {
 
 const cureentDurationOnClick = (e) => {
   const isCurrent = cureentDurationButton.querySelector('.is-current')
-  console.log(isCurrent)
   if(isCurrent) {
     isCurrent.classList.remove('is-current')
   } 
