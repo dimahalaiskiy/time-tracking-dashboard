@@ -1,5 +1,4 @@
 import json from "./data.json"
-import icons from "./images/icons.svg"
 
 
 const dataJsonString = JSON.stringify(json);
@@ -80,6 +79,7 @@ const monthlyMarkup = () => {
 
 const cureentDurationOnClick = (e) => {
   const isCurrent = cureentDurationButton.querySelector('.is-current')
+  if(!(e.target === dailyButton || e.target === weeklyButton || e.target === monthlyButton)) return
   if(isCurrent) {
     isCurrent.classList.remove('is-current')
   } 
