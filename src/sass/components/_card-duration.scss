@@ -1,0 +1,80 @@
+.card {
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 240px 240px 240px;
+    grid-gap: 30px;
+}
+
+.card-option {
+    position: absolute;
+    /* transform: translateY(100%);
+    transition: transform 1000ms cubic-bezier(0.19, 1, 0.22, 1); */
+    display: block;
+    width: 100%;
+    height: 81.3%;
+    top: 19%;
+    left: 0;
+    padding: 23px;
+    border-radius: 10px;
+    background-color: rgb(99, 43, 145);
+}
+
+/* .time-card:hover .card-option {
+    transform: translateY(0);
+} */
+
+.card-description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-text {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon-svg {
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    fill: rgba(255, 255, 255, 0.65);
+}
+
+.svg-menu {
+    fill: white;
+    width: 20px;
+    height: 7px;
+}
+
+.heading-hours {
+    margin-top: 25px;
+    font-size: 46px;
+    font-weight: 300;
+    color: white;
+}
+
+.paragraph-duration {
+    margin-top: 10px;
+    font-size: 13px;
+    color: rgb(185, 182, 182);
+}
+
+.heading-occupation {
+    text-transform: uppercase;
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+    font-size: 39px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
